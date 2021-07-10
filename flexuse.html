@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Use</title>
+    <script src="https://kit.fontawesome.com/332314ac0e.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0%;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin-right: 15px;
+            color: black;
+            font-size: 1.5em;
+        }
+
+        nav {
+            background-color: greenyellow;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .login-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .login-form input,
+        button {
+            margin-top: 15px;
+            font-size: 1.3em;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+
+        .login-form button {
+            background-color: orange;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span>
+                <a href="">Home</a>
+                <a href="">Products</a>
+                <a href="">Flexbox</a>
+                <a href="">Help</a>
+                <a href="">About us</a>
+            </span>
+            <span>
+                <a href=""><i class="fas fa-user"></i></a>
+                <a href=""><i class="fas fa-sign-in-alt"></i></a>
+            </span>
+        </nav>
+    </header>
+    <section class="login-container">
+        <form action="" class="login-form">
+            <h2>Login</h2>
+            <input type="email" placeholder="Enter your email" name="email" id="">
+            <input type="password" placeholder="Enter your passward" name="passward" id="">
+            <button type="submit">Login</button>
+        </form>
+    </section>
+</body>
+
+</html>
